@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wallet-container {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-right: 20px;
+  min-width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wallet {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.wallet .account-address {
+  font-size: 20px;
+  margin: 0;
+}
+
+.wallet .balance-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.balance-item {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.faucet-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.balance-item {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #4285f4;
+  border: none;
+  border-radius: 5px;
   color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #ff9933;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:active {
+  background-color: #ff9933;
+  transform: translateY(2px);
+}
+
+.button[disabled] {
+  background-color: #87aff9;
+  cursor: not-allowed;
+}
+
+.connect-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
 }
